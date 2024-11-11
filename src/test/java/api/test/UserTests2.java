@@ -2,7 +2,7 @@ package api.test;
 
 
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.async.AsyncLogger;
+//import org.apache.logging.log4j.core.async.AsyncLogger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -24,7 +24,6 @@ public class UserTests2 {
 		faker=new Faker();
 		userPayload = new User();
 		
-		 final Logger logger;
 		
 		userPayload.setId(faker.idNumber().hashCode());
 		userPayload.setUsername(faker.name().username());
